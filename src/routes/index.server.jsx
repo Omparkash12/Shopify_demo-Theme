@@ -14,8 +14,20 @@ import {getHeroPlaceholder} from '~/lib/placeholders';
 import {FeaturedCollections, Hero} from '~/components';
 import {Layout, ProductSwimlane} from '~/components/index.server';
 import ArSection from '../components/sections/ArSection';
-import CardSection from '../components/sections/CardSection';
+import CardSection from '../components/sections/CardSection.client';
 import AboutSection from '../components/sections/AboutSection';
+import MakingDifference from '../components/sections/MakingDifference';
+import SaveTime from '../components/sections/SaveTime';
+import ColdWater from '../components/sections/ColdWater';
+
+
+
+// Images
+import SectionImage1 from '../assets/SaveTime_Money.png';
+import cold_water from '../assets/cold_water.png';
+import SectionImage2 from '../assets/biodegradable.png';
+
+
 
 export default function Homepage() {
   useServerAnalytics({
@@ -63,6 +75,11 @@ function HomepageContent() {
     <ArSection/>
     <CardSection />
     <AboutSection />
+    <MakingDifference />
+    <SaveTime sectionHeading='Save time, energy and money' sectionText='One of the main strengths of our strips over capsules, powder or liquid detergent is their versatility. You can use as much or as little as you like, depending on what you need. Meaning more loads for your money or fewer washes per week!' sectionButtonText='Shop Now' SectionImage={SectionImage1}/>
+    <ColdWater cold_water={cold_water}/>
+    <SaveTime sectionHeading='Climate positive and certified biodegradable' sectionText='Each pack is lightweight and comfortably fits through your letterbox, significantly reducing delivery CO2. All of our packaging is plastic free & compostable and for every 100 strips sold, we clean up 1kg of plastic from the ocean.' sectionButtonText='Shop Now' SectionImage={SectionImage2}/>
+
       {primaryHero && (
         <Hero {...primaryHero} height="full" top loading="eager" />
       )}

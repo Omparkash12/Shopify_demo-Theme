@@ -1,3 +1,4 @@
+import { Link } from '@shopify/hydrogen';
 import React from 'react';
 import BannerImages from '../../assets/demo_img.svg';
 
@@ -6,11 +7,11 @@ const ArSection = () => {
     <>
       <section className='custom_banner'>
         <div className="container_ar">
-          <div className="banner">
+          <div className="banner sm:pt-[3rem] pt-[2rem]">
             <div className="left_data">
               <h1>Laundry Detergent Reimagined.</h1>
               <p>Powerful, sustainable, plant based laundry detergent in the form of super versatile strips.</p>
-              <a href="/#">Shop Now</a>
+              <Link to="/collections">Shop Now</Link>
             </div>
             <div className="right_data">
               <img src={BannerImages} alt="" />

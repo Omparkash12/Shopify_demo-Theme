@@ -71,8 +71,8 @@ function MobileHeader({ countryCode, title, isHome, openCart, openMenu }) {
   const styles = {
     button: 'relative flex items-center justify-center w-8 h-8',
     container: `${isHome
-        ? 'bg-[#fff] text-primary'
-        : 'bg-[#fff] text-primary'
+      ? 'bg-[#fff] text-primary'
+      : 'bg-[#fff] text-primary'
       } ${y > 50 && !isHome ? 'shadow-lightHeader ' : ''
       }flex lg:hidden items-center h-nav sticky backdrop-blur-lg z-40 top-0 justify-between w-full leading-none gap-4 px-4 md:px-8`,
   };
@@ -134,63 +134,61 @@ function DesktopHeader({ countryCode, isHome, menu, openCart, title }) {
     button:
       'relative flex items-center justify-center w-8 h-8 focus:ring-primary/5',
     container: `${isHome
-        ? 'bg-[#fff] text-primary'
-        : 'bg-[#fff] text-primary'
+      ? 'bg-[#fff] text-primary'
+      : 'bg-[#fff] text-primary'
       } ${y > 50 && !isHome ? 'shadow-lightHeader ' : ''
-      }hidden h-nav lg:flex items-center sticky transition duration-300 backdrop-blur-lg z-40 top-0 justify-between w-full leading-none gap-8 px-12 py-8`,
+      }hidden h-nav lg:flex items-center sticky transition duration-300 backdrop-blur-lg z-40 top-0 justify-between w-full leading-none gap-8 px-[1.5rem] py-[0rem]`,
   };
 
   return (
     <>
-    {/* Top Promotion Bar */}
-    {/* <PromotionSection/> */}
-    <header role="banner" className={styles.container}>
-      <Link className={`font-bold`} to="/">
-        {/* {title} */}
-        <img src={brand_image} alt="" />
-      </Link>
-      <div className="flex items-center gap-12">
-        {/* <Link className={`font-bold`} to="/">
+      <header role="banner" className={styles.container}>
+        <Link className={`font-bold w-[20%]`} to="/">
+          {/* {title} */}
+          <img src={brand_image} alt="" />
+        </Link>
+        <div className="flex items-center justify-center gap-12 w-[60%] TopNavManu">
+          {/* <Link className={`font-bold`} to="/">
           <img src={brand_image} alt="" />
         </Link> */}
-        <nav className="flex gap-8">
-          {/* Top level menu items */}
-          {(menu?.items || []).map((item) => (
-            <Link key={item.id} to={item.to} target={item.target}>
-              {item.title}
-            </Link>
-          ))}
-        </nav>
-      </div>
-      <div className="flex items-center gap-1">
-        <form
-          action={`/${countryCode ? countryCode + '/' : ''}search`}
-          className="flex items-center gap-2"
-        >
-          <Input
-            className={
-              isHome
-                ? 'focus:border-contrast/20 dark:focus:border-primary/20'
-                : 'focus:border-primary/20'
-            }
-            type="search"
-            variant="minisearch"
-            placeholder="Search"
-            name="q"
-          />
-          <button type="submit" className={styles.button}>
-            <IconSearch />
+          <nav className="flex gap-8">
+            {/* Top level menu items */}
+            {(menu?.items || []).map((item) => (
+              <Link key={item.id} to={item.to} target={item.target}>
+                {item.title}
+              </Link>
+            ))}
+          </nav>
+        </div>
+        <div className="flex items-center justify-end gap-1 w-[20%]">
+          <form
+            action={`/${countryCode ? countryCode + '/' : ''}search`}
+            className="flex items-center gap-2"
+          >
+            <Input
+              className={
+                isHome
+                  ? 'focus:border-contrast/20 dark:focus:border-primary/20'
+                  : 'focus:border-primary/20'
+              }
+              type="search"
+              variant="minisearch"
+              placeholder="Search"
+              name="q"
+            />
+            <button type="submit" className={styles.button}>
+              <IconSearch />
+            </button>
+          </form>
+          <Link to={'/account'} className={styles.button}>
+            <IconAccount />
+          </Link>
+          <button onClick={openCart} className={styles.button}>
+            <IconBag />
+            <CartBadge dark={isHome} />
           </button>
-        </form>
-        <Link to={'/account'} className={styles.button}>
-          <IconAccount />
-        </Link>
-        <button onClick={openCart} className={styles.button}>
-          <IconBag />
-          <CartBadge dark={isHome} />
-        </button>
-      </div>
-    </header>
+        </div>
+      </header>
     </>
   );
 }
@@ -204,8 +202,8 @@ function CartBadge({ dark }) {
   return (
     <div
       className={`${dark
-          ? 'text-primary bg-contrast dark:text-contrast dark:bg-primary'
-          : 'text-contrast bg-primary'
+        ? 'text-primary bg-contrast dark:text-contrast dark:bg-primary'
+        : 'text-contrast bg-primary'
         } absolute bottom-1 right-1 text-[0.625rem] font-medium subpixel-antialiased h-3 min-w-[0.75rem] flex items-center justify-center leading-none text-center rounded-full w-auto px-[0.125rem] pb-px`}
     >
       <span>{totalQuantity}</span>
