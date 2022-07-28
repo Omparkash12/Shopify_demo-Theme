@@ -7,9 +7,9 @@ const ArSection = () => {
     <>
       <section className='custom_banner'>
         <div className="container_ar">
-          <div className="banner sm:pt-[3rem] pt-[2rem]">
+          <div className="banner md:pt-[3rem] md:pb-[1rem] py-[2rem]">
             <div className="left_data">
-              <h1>Laundry Detergent Reimagined.</h1>
+              <h1 className='font-["Ambroise_Demo"]'>Laundry Detergent Reimagined.</h1>
               <p>Powerful, sustainable, plant based laundry detergent in the form of super versatile strips.</p>
               <Link to="/collections">Shop Now</Link>
             </div>

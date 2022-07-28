@@ -1,7 +1,18 @@
-import {Suspense, useMemo} from 'react';
-import {gql, useShopQuery, useLocalization} from '@shopify/hydrogen';
-import {PRODUCT_CARD_FRAGMENT} from '~/lib/fragments';
-import {ProductCard, Section} from '~/components';
+import { Suspense, useMemo } from 'react';
+import { gql, useShopQuery, useLocalization } from '@shopify/hydrogen';
+import { PRODUCT_CARD_FRAGMENT } from '~/lib/fragments';
+import { ProductCard, Section } from '~/components';
+
+
+// The component name must finish with .client.jsx | .client.tsx
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+// import Slider from 'react-slick';
+
+
+
+
+
 
 const mockProducts = new Array(12).fill('');
 
@@ -30,17 +41,18 @@ export function ProductSwimlane({
     // If no data is provided, we'll go and query the top products
     return <TopProducts count={count} />;
   }, [count, data]);
-
+  
   return (
     <Section heading={title} padding="y" {...props}>
       <div className="swimlane hiddenScroll md:pb-8 md:scroll-px-8 lg:scroll-px-12 md:px-8 lg:px-12">
         EOOO
+          {/* {productCardsMarkup} */}
       </div>
     </Section>
   );
 }
 
-function ProductCards({products}) {
+function ProductCards({ products }) {
   return (
     <>
       {products.map((product) => (
@@ -54,13 +66,13 @@ function ProductCards({products}) {
   );
 }
 
-function RecommendedProducts({productId, count}) {
+function RecommendedProducts({ productId, count }) {
   const {
-    language: {isoCode: languageCode},
-    country: {isoCode: countryCode},
+    language: { isoCode: languageCode },
+    country: { isoCode: countryCode },
   } = useLocalization();
 
-  const {data: products} = useShopQuery({
+  const { data: products } = useShopQuery({
     query: RECOMMENDED_PRODUCTS_QUERY,
     variables: {
       count,
@@ -86,9 +98,9 @@ function RecommendedProducts({productId, count}) {
   return <ProductCards products={mergedProducts} />;
 }
 
-function TopProducts({count}) {
+function TopProducts({ count }) {
   const {
-    data: {products},
+    data: { products },
   } = useShopQuery({
     query: TOP_PRODUCTS_QUERY,
     variables: {

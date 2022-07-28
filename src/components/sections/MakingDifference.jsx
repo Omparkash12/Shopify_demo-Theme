@@ -4,8 +4,8 @@ const MakingDifference = () => {
     return (
         <section className="making_difference float-left w-[100%]">
             <div className='container_ar'>
-                <div className="making_difference_data flex sm:flex-row flex-col-reverse items-center md:py-[3rem] py-[2rem]">
-                    <div className="left_data sm:w-[50%] w-[100%] sm:pt-[0] pt-[16px] ">
+                <div className="making_difference_data flex md:flex-row flex-col-reverse items-center md:py-[3rem] py-[2rem]">
+                    <div className="left_data md:w-[50%] w-[100%] md:pt-[0] pt-[16px] ">
                         <div className="stars flex gap-[4px] pb-[8px]">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -37,7 +37,7 @@ const MakingDifference = () => {
                                 </svg>
                             </span>
                         </div>
-                        <h1 className='sm:text-[42px] text-[32px] sm:leading-[48px] leading-[38px] font-[700] pb-[20px]'>Making a Difference.</h1>
+                        <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[38px] font-[700] pb-[20px] font-["Ambroise_Demo"]'>Making a Difference.</h1>
                         <a href="/#" className=''>
                             <div className='flex items-center text-[#d6ac94]'>
                                 <svg className='mr-[8px]' width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ const MakingDifference = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="left_data sm:w-[50%] w-[100%]">
+                    <div className="left_data md:w-[50%] w-[100%]">
                         <img className='w-[100%]' src='https://cdn.shopify.com/s/files/1/0631/6123/7716/files/Group_7_720x.png?v=1647348518' alt="" />
                     </div>
                 </div>
