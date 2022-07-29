@@ -48,29 +48,29 @@ export default function SimpleSlider() {
                                 <div className="car_image">
                                     <img className='m-[auto]' src={thumb} alt="" />
                                 </div>
-                                <h4>Test text</h4>
-                                <p>Test text</p>
+                                <h4>Trusted by</h4>
+                                <p>Thousands Taking-A-Dip</p>
                             </div>
                             <div className="card_data_1 text-center">
                                 <div className="car_image">
                                     <img className='m-[auto]' src={Frame1} alt="" />
                                 </div>
-                                <h4>Test text</h4>
-                                <p>Test text</p>
+                                <h4>Hypoallergenic</h4>
+                                <p>Great for Sensitive Skin</p>
                             </div>
                             <div className="card_data_1 text-center">
                                 <div className="car_image">
                                     <img className='m-[auto]' src={Frame2} alt="" />
                                 </div>
-                                <h4>Test text</h4>
-                                <p>Test text</p>
+                                <h4>Natural</h4>
+                                <p>Plant Based Ingredients</p>
                             </div>
                             <div className="card_data_1 text-center">
                                 <div className="car_image">
                                     <img className='m-[auto]' src={Frame3} alt="" />
                                 </div>
-                                <h4>Test text</h4>
-                                <p>Test text</p>
+                                <h4>OECD-301B</h4>
+                                <p>Certified Biodegradable</p>
                             </div>
                         </Slider>
                     </div>

@@ -10,7 +10,7 @@ const SaveTime = (props) => {
                     </div>
                     <div className="left_data md:w-[50%] w-[100%]">
                         <div className="relative md:-left-[45px] left-[0px] md:px-[40px] px-[16px] md:py-[20px] py-[16px] bg-[#fff]">
-                            <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[28px] font-[700] sm:p-[0] pt-[12px] font-["Ambroise_Demo"]'>
+                            <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[28px] font-[700] sm:p-[0] pt-[12px] font-["Ambroise_Demi"]'>
                                 {props.sectionHeading}
                             </h1>
                             <p className='md:py-[24px] py-[16px] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[Nexa]'>

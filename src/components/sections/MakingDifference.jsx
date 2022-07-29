@@ -37,7 +37,7 @@ const MakingDifference = () => {
                                 </svg>
                             </span>
                         </div>
-                        <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[38px] font-[700] pb-[20px] font-["Ambroise_Demo"]'>Making a Difference.</h1>
+                        <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[38px] font-[700] pb-[20px] font-["Ambroise_Demi"]'>Making a Difference.</h1>
                         <a href="/#" className=''>
                             <div className='flex items-center text-[#d6ac94]'>
                                 <svg className='mr-[8px]' width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">

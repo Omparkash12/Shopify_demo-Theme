@@ -10,7 +10,7 @@ const AboutSection = () => {
                         <img className='w-[100%]' src={about_image} alt="" />
                     </div>
                     <div className="left_data md:w-[50%] w-[100%]">
-                        <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[28px] font-[700] md:p-[0] pt-[12px] font-["Ambroise_Demo"]'>About us</h1>
+                        <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[28px] font-[700] md:p-[0] pt-[12px] font-["Ambroise_Demi"]'>About us</h1>
                         <p className='md:py-[24px] py-[16px] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[Nexa]'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis odio at donec arcu pellentesque vitae, nunc. Nibh pulvinar tellus nisl magna vitae consequat neque. Sit congue elementum amet interdum commodo.
                         </p>

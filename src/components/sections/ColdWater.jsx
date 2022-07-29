@@ -7,7 +7,7 @@ const ColdWater = (props) => {
                 <div className="about_data flex md:flex-row flex-col-reverse items-center md:px-[0] px-[24px] md:py-[3rem] py-[2rem]">
                     <div className="left_data md:w-[50%] w-[100%]">
                         <div className="relative md:-right-[45px] right-[0px] md:px-[40px] md:py-[20px] px-[16px] py-[16px] bg-[#fff]">
-                            <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[28px] font-[700] sm:p-[0] pt-[12px] font-["Ambroise_Demo"]'>
+                            <h1 className='md:text-[42px] text-[24px] md:leading-[48px] leading-[28px] font-[700] sm:p-[0] pt-[12px] font-["Ambroise_Demi"]'>
                                 Instantly dissolve in hot or cold water
                             </h1>
                             <p className='md:py-[24px] py-[16px] md:text-[16px] text-[12px] sm:leading-[20px] leading-[16px] font-[Nexa]'>

@@ -296,7 +296,9 @@ body{
 }
 
 /* Navbar */
-.TopNavManu {
+.TopNavManu_ar a {
+  letter-spacing: 2px;
+  color: #666;
   font-family: 'Ambroise Demi';
   font-size: 20px;
 }
@@ -382,14 +384,17 @@ body{
 } */
 
 .card_section .card_data_1 h4 {
-    padding-top: 3rem;
-    font-size: 20px;
-    line-height: 24px;
+  padding-top: 3rem;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Ambroise Demi';
+  letter-spacing: 1px;
+  color: #000;
 }
 .card_section .card_data_1 p {
   font-size: 16px;
   line-height: 20px;
-  padding-top: 4px;
+  padding-top: 8px;
   font-family: 'Nexa';
 }
 .aboutSection .left_data a svg {
@@ -405,6 +410,26 @@ body{
 
 .making_difference .stars svg {
   fill: #d6ac94;
+}
+
+
+.footer_links_ar a {
+  font-family: 'Nexa';
+  color: #000;
+  font-size: 14px;
+  line-height: 30px;
+}
+.footer_links_ar h3 {
+  font-size: 20px;
+    line-height: 24px;
+    color: #B8DFE7;
+    font-family: 'Ambroise Demi';
+    letter-spacing: 2px;
+}
+
+.Card_slider .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 12px;
 }
 
 @media screen and (max-width:1024px) {

@@ -142,12 +142,13 @@ function DesktopHeader({ countryCode, isHome, menu, openCart, title }) {
 
   return (
     <>
+    <section className="header_navBar"></section>
       <header role="banner" className={styles.container}>
         <Link className={`font-bold w-[20%]`} to="/">
           {/* {title} */}
           <img src={brand_image} alt="" />
         </Link>
-        <div className="flex items-center justify-center gap-12 w-[60%] TopNavManu">
+        <div className="flex items-center justify-center gap-12 w-[60%] TopNavManu_ar">
           {/* <Link className={`font-bold`} to="/">
           <img src={brand_image} alt="" />
         </Link> */}
